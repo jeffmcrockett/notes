@@ -1,3 +1,139 @@
+const { before } = require("mocha");
+
+
+
+// Use a do...while loop to console.log the numbers from 1 to 1000.
+
+let i = 0;
+do { i = i + 1;
+    console.log(i)
+} while (i < 1000)
+
+
+// Create an object (with keys and values) called person with the following data:
+// firstName: "Jane",
+// lastName: "Doe",
+// birthDate: "Jan 5, 1925",
+// gender: "female"
+
+const person = {
+    firstName: 'Jane',
+    lastName: 'Doe',
+    birthDate: 'Jan 5, 1925',
+    gender: 'female'
+  }
+
+
+// Create a function that logs out the keys of the object using Object.keys().
+
+let objKey = function(element){
+    console.log(Object.keys(element))
+  }
+objKey(person);
+
+
+// Create a function that logs out the keys and values of the object using Object.entries().
+
+let objEntries = function(obj) {
+    console.log(Object.entries(obj))
+  }
+objEntries(person);
+
+
+// Create an arrayOfPersons that contains multiple "people" objects. You can simply 
+// copy/paste the person object you made above multiple times. Feel free to change the values to reflect multiple people you might have in your database.
+
+let arrayOfPersons = [
+    {
+      firstName: 'Johnny',
+      lastName: 'Tsunami',
+      birthDate: 'Jan 15, 1990',
+      gender: 'male'
+    },
+    {
+      firstName: 'Alexa',
+      lastName: 'Smith',
+      birthDate: 'Aug 19, 1982',
+      gender: 'female'
+    },
+    {
+      firstName: 'Peter',
+      lastName: 'Parker',
+      birthDate: 'May 2, 1999',
+      gender: 'male'
+    },
+    {
+      firstName: 'Charlotte',
+      lastName: 'James',
+      birthDate: 'Apr 20, 2000',
+      gender: 'female'
+    }
+  ];
+
+
+// Create a function that uses a for...of loop and an if statement to console.log the value associated with the key birthDate 
+// of each object if the birth year is an odd number.
+
+let oddBdayYear = []
+for (const i of arrayOfPersons) {
+  let birthyear = element.birthDate.slice(-4);
+  if (birthyear % 2 == 1) {
+    oddBdayYear.push(element)
+  }
+}
+console.log(oddBD);
+
+
+// Use .map() to map over the arrayOfPersons and console.log() their information.
+
+console.log(
+    arrayOfPersons.map(function(element){
+      return `Hello, my name is ${element.firstName} ${element.lastName} and I was born on ${element.birthDate}`
+    })
+  );
+
+
+// Use .filter() to filter the persons array and console.log only males in the array.
+
+arrayOfPersons.filter(function(element){
+    if (element.gender == 'male') {
+    console.log(element);
+    }
+  });
+
+
+// Create a function that returns true if the value of birthDate is before Jan 1, 1990.
+
+let ageCheck = arrayOfPersons.forEach(function(index){
+    birthYear = index.birthDate.slice(-4);
+    console.log(birthYear);
+    if (birthYear < 1990) {
+      return true;
+    }
+    console.log(ageCheck);
+  });
+
+
+// Use .filter() to filter the persons array and console.log only people that were born before Jan 1, 1990.
+
+let ageCheck2 = arrayOfPersons.filter(bornBefore1990); 
+    function bornBefore1990(object){
+    if(object.birthDate.split(' ')[2] < 1990){
+        return object; 
+    }
+  };
+console.log(ageCheck2);
+
+
+
+
+
+
+
+//! All remaining lines are class notes...
+
+
+
 // Loops
 // Loop through code for however many times you specify, or
 // until a certain condition is met
@@ -94,24 +230,24 @@
 
 
 
-let fruit = [
-    'apple',
-    'banana',
-    'cucumber',
-    'dragon fruit',
-    'elderberry',
-    'fig',
-    'grapefruit',
-    'honeysuckle'
-]
+// let fruit = [
+//     'apple',
+//     'banana',
+//     'cucumber',
+//     'dragon fruit',
+//     'elderberry',
+//     'fig',
+//     'grapefruit',
+//     'honeysuckle'
+// ]
 
-console.log(fruit[0]);
-console.log(fruit[1]);
-console.log(fruit[2]);
-console.log(fruit[3]);
-console.log(fruit[4]);
+// console.log(fruit[0]);
+// console.log(fruit[1]);
+// console.log(fruit[2]);
+// console.log(fruit[3]);
+// console.log(fruit[4]);
 
-for (i = 0; i < fruit.length; i++) {
-    console.log(i);
-    console.log(fruit[i]);
-}
+// for (i = 0; i < fruit.length; i++) {
+//     console.log(i);
+//     console.log(fruit[i]);
+// }
