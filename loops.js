@@ -64,7 +64,7 @@ let arrayOfPersons = [
     },
     {
       firstName: 'Charlotte',
-      lastName: 'James',
+      lastName: 'Spence',
       birthDate: 'Apr 20, 2000',
       gender: 'female'
     }
