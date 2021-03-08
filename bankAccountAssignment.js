@@ -55,6 +55,7 @@ class Transaction {
     payee;
 
     constructor(amount, payee) {
+        // need to add a Date() function to create a date
         this.date = new Date();
         this.amount = amount;
         this.payee = payee;
